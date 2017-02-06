@@ -5,6 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Portfolio' });
 });
+router.get('/home', function(req, res, next) {
+  res.render('index', { title: 'Portfolio' });
+});
 
 /* GET 404 page */
 router.get('/*', function(req, res, next) {
@@ -12,3 +15,5 @@ router.get('/*', function(req, res, next) {
 });
 
 module.exports = router;
+
+
