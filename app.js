@@ -7,10 +7,11 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
-// add the new about router
+// add the new pages controller / router
 var about = require('./routes/about');
-
+var projects = require('./routes/projects');
+var services = require('./routes/services');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -29,6 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/about', about);
+app.use('/projects', projects);
+app.use('/services', services);
+app.use('/contact', contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,9 +1,9 @@
 let express = require('express');
 let router = express.Router();
 
-/* GET about index page */
+/* GET contact index page */
 router.get('/', function(req, res, next) {
-   res.render('about/index');
+   res.render('contact/index');
 });
 
 // make public
