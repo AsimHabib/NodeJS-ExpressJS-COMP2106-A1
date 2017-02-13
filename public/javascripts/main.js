@@ -21,18 +21,6 @@ Backstretch Images
   ]);
 
 /*============================================
-ScrollTo Links -- Scroll to section
-==============================================*/
-$('a.scrollto').click(function(e){
-    $('html,body').scrollTo(this.hash, this.hash, {gap:{y:-80}});
-    e.preventDefault();
-
-    if ($('.navbar-collapse').hasClass('in')){
-        $('.navbar-collapse').removeClass('in').addClass('collapse');
-    }
-});
-
-/*============================================
 Navigation Functions
 ==============================================*/
 if ($(window).scrollTop()===0){
