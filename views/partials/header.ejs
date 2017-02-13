@@ -1,45 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- ==============================================
+Author: Asim Habib
+Website: Portfolio
+=============================================== -->	
+<!-- ==============================================
+Title and Meta Tags
+=============================================== -->
+<meta charset="utf-8">
+<!-- <title>Asim Habib | Portfolio</title>-->
+<title><%=title %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
- <!-- Google fonts  -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type='text/css'>
+<!-- ==============================================
+CSS
+=============================================== -->    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./stylesheets/style.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="stylesheets/style.css" rel="stylesheet">
+<!-- ==============================================
+Fonts
+=============================================== -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type='text/css'> 
 
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Asim - Portfolio</a>
-    </div>
+<!-- ==============================================
+JS
+=============================================== -->			
+<!--[if lt IE 9]>
+	<script src="javascript/respond.min.js"></script>
+<![endif]-->
+<!-- Modernizr Javascript -->
+<script type="text/javascript" src="javascripts/modernizr.js"></script>
+</head>  
+	<body>		
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<nav id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">			
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					
+					<!-- ======= LOGO ========-->					
+					<a href="/" class="pull-left brand-font navbar-brand scrollto" title="portfolio">
+						<img src="./images/logo.png" title="Asim Habib" class="logo" />
+					</a>
+				</div>				
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+           <li>
+							<a href="/" class="scrollto">Home</a>
+						</li>
+						<li>
+							<a href="/about" class="scrollto">About Me</a>
+						</li>
+						<li>
+							<a href="/projects" class="scrollto">Projects</a>
+						</li>
+            <li>
+							<a href="/services" class="scrollto">Services</a>
+						</li>
+						<li>
+							<a href="/contact" class="scrollto">Contact Me</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->				
+			</div><!-- ./container -->			
+		</nav><!--End main-nav -->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-right" id="rNav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact Me</a></li>
-                 
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>

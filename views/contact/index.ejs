@@ -1,5 +1,63 @@
 <% include ../partials/header.ejs %>
 
-<h1>Contact</h1>
+<!-- ==============================================
+CONTACT
+=============================================== -->	
+<section  id="contact">		
+    <div class="container">			
+        <h1 class="section-title scrollimation scale-in">Keep in <span>Touch</span> with me</h1>				
+        <div class="row">				
+            <div class="col-sm-5 contact-info">						
+                <address>
+                    Asim Habib<br>							
+                    Barrie, ON Canada<br>
+                    <a href="mailto:asimhabib2@gmail.com">asimhabib2@gmail.com</a><br>							
+                </address>
+                
+                <ul class="socials">
+                    <li><a href="https://www.linkedin.com/in/asimhabib/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="github.com/asimHabib/" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#facebook-link"><i class="fa fa-facebook"></i></a></li>
+                </ul>						
+            </div>				  
+            <form id="contact-form" class="col-sm-7">
+                
+                <div class="form-group">
+                    <label class="control-label" for="contact-name">Name</label>
+                    <div class="controls">
+                    <i class="fa fa-user"></i>
+                    <input id="contactName" name="contact-Name" placeholder="My name is..." class="form-control input-lg" type="text" required>
+                    </div>
+                </div><!-- End name input -->
+                <div class="form-group">
+                    <div class="controls">
+                    <i class="fa fa-phone"></i>
+                    <label class="control-label" for="ContactNumber">Contact Number</label>
+                    <input type="tel" class="form-control" id="ContactNumber" placeholder="Enter your contact number..." class="form-control input-lg" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label" for="contact-mail">Email</label>
+                    <div class=" controls">
+                    <i class="fa fa-envelope"></i>
+                    <input id="Email" name="email" placeholder="Please respond at..." class="form-control input-lg" type="email" required>
+                    </div>
+                </div><!-- End email input -->
+                
+                <div class="form-group">
+                    <label class="control-label" for="contact-message">Message</label>
+                    <div class="controls">
+                        <i class="fa fa-comment"></i>
+                        <textarea id="Message" name="comments"  placeholder="I wanna talk about..." class="form-control input-lg" rows="5" required></textarea>
+                    </div>
+                </div><!-- End textarea -->
+                
+                <p><button name="submit" type="submit" id="SendButton" class="btn btn-theme btn-lg"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                                    
+            </form><!-- End contact-form -->				  
+        </div><!-- End row -->				
+    </div><!-- End container -->			
+</section><!-- End contact section -->
 
 <% include ../partials/footer.ejs %>

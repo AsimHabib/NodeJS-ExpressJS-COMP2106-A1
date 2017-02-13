@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // call/render the index.ejs view 
-  res.render('index');
+  res.render('index',{title:'Home'});
 });
 
 /* GET register */
