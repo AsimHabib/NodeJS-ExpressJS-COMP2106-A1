@@ -13,11 +13,11 @@ Backstretch Images
 	//$('.jumbotron').backstretch();
     //to load from a url that can accept a resolution and provide the best image for that resolution
     $(".jumbotron").backstretch([
-     "../images/ah3.jpg?width={width}&height={height}",   
+     "./images/ah3.jpg?width={width}&height={height}",   
   ]);
 
    $("#main-footer").backstretch([
-    "../images/ft-bg.jpg?width={width}&height={height}",
+    "./images/ft-bg.jpg?width={width}&height={height}",
   ]);
 
 /*============================================
