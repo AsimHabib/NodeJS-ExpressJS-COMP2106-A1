@@ -7,6 +7,26 @@ router.get('/', function(req, res, next) {
   res.render('index',{title:'Home'});
 });
 
+/* GET about index page */
+router.get('/about', function(req, res, next) {
+   res.render('about/index',{title:'About'});
+});
+
+/* GET projects index page */
+router.get('/projects', function(req, res, next) {
+   res.render('projects/index',{title:'Projects'});
+});
+
+/* GET services index page */
+router.get('/services', function(req, res, next) {
+   res.render('services/index',{title:'Services'});
+});
+
+/* GET contact index page */
+router.get('/contact', function(req, res, next) {
+   res.render('contact/index',{title:'Contact'});
+});
+
 /* GET register */
 router.get('/register', function(req, res, next) {
   // call/render the register.ejs view 
