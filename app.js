@@ -8,10 +8,10 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 // add the new pages controller / router
-var about = require('./routes/about');
-var projects = require('./routes/projects');
-var services = require('./routes/services');
-var contact = require('./routes/contact');
+var about = require('./routes/index');
+var projects = require('./routes/index');
+var services = require('./routes/index');
+var contact = require('./routes/index');
 
 var app = express();
 
